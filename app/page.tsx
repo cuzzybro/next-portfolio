@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { prefix } from "./prefix";
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ export default function Home() {
 
       <div className=" absolute bottom-0 right-0 z-[10] ">
         <Image 
-          src="/horse.png" 
+          src={`${prefix}/horse.png`}
           alt="horse"
           height={300}
           width={300}
@@ -63,7 +64,7 @@ export default function Home() {
         />
 
         <Image
-          src="/cliff.webp"
+          src={`${prefix}/cliff.webp`}
           alt="cliff"
           width={480}
           height={480}
@@ -73,7 +74,7 @@ export default function Home() {
 
       <div className=" absolute bottom-0 z-[5] w-full h-auto">
         <Image 
-            src="/trees.webp" 
+            src={`${prefix}/trees.webp`}
             alt="trees"
             height={2000}
             width={2000}
@@ -82,7 +83,7 @@ export default function Home() {
           />
       </div>
       <Image 
-          src="/stars.png" 
+          src={`${prefix}/stars.png`}
           alt="stars"
           height={300}
           width={300}
