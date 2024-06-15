@@ -15,19 +15,76 @@ export default function Home() {
           <p className=" text-gray-200 hidden md:block ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente vel porro totam earum sed harum est adipisci hic voluptates, ex ipsum officia quas voluptate veritatis quia nihil dolores? Aut?
           </p>
-          <div className=" flex-col md:flex-row hidden md:flex ">
+          <div className=" flex-col md:flex-row hidden md:flex gap-5 ">
             <Link href="/my-skills" className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]">
               Learn more
             </Link>
             <Link href="/my-projects" className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]">
+              <div className=" absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               My Projects
             </Link>
             <Link href="/contact" className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]">
+            <div className=" absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Contact Me
             </Link>
           </div>
         </div>
       </div>
+
+      <div className=" absolute bottom-10 z-[20] right-5 flex-col md:hidden gap-5 ">
+        <Link 
+          href="/my-skills" 
+          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          Learn more
+        </Link>
+        <Link 
+          href="/my-projects" 
+          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          My Projects
+        </Link>
+        <Link 
+          href="/contact" 
+          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          Contact Me
+        </Link>
+      </div>
+
+      <div className=" absolute bottom-0 right-0 z-[10] ">
+        <Image 
+          src="/horse.png" 
+          alt="horse"
+          height={300}
+          width={300}
+          className="absolute right-55 top-40 "
+        />
+
+        <Image
+          src="/cliff.webp"
+          alt="cliff"
+          width={480}
+          height={480}
+        />
+      </div>
+
+      <div className=" absolute bottom-0 z-[5] w-full h-auto">
+        <Image 
+            src="/trees.webp" 
+            alt="trees"
+            height={2000}
+            width={2000}
+            className=" w-full h-full "
+          />
+      </div>
+      <Image 
+          src="/stars.png" 
+          alt="stars"
+          height={300}
+          width={300}
+          className="absolute top-10 left-0 z-[10]"
+        />
     </main>
   );
 }
