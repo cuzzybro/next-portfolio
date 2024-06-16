@@ -64,7 +64,7 @@ export default function Home() {
         />
 
         <Image
-          src={`${prefix}/cliff.webp`}
+          src={`${prefix}./cliff.webp`}
           alt="cliff"
           width={480}
           height={480}
